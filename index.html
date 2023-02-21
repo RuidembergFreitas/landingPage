@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/class.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a class="logo" href="#home"><img src="assets/img/Avatar-Maker.png" alt="logo avatar"> </a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#intro">Sobre</a></li>
+                    <li><a href="#grid-one">Formação</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Olá, eu sou Rui</h2>
+                <p>Um desenvolvedor Web em treinamento. Fiz essa página para demonstrar um pouco do meu conhecimento.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/frfdev85.png" alt="html css">
+            </div>
+        </div>
+    </section> 
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Sobre mim</h2>
+            <p>Nascido em Fortaleza-CE em 1985, sou formado em Análise e Desenvolvimento de Sistemas e sempre fui fascinado pelo mundo da tecnologia. Após muitos anos em outra área, decidi me dedicar ao desenvolvimento frontend, paixão que descobri ao criar interfaces de usuário atraentes e intuitivas. Com determinação e estudo autodirigido em linguagens como HTML, CSS e JavaScript, fiquei encantado em ver meus projetos ganharem vida diante dos meus olhos. Agora, como desenvolvedor frontend, sinto-me gratificado em transformar ideias em experiências interativas para usuários de todo o mundo.
+            </p>
+        </div>
+    </section> 
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-reading">Formações</h2>
+            <div class="grid">
+                <article>
+                    <h3>Formação Acadêmica</h3>
+                        <p>Formado em Análise e Desenvolvimento de Sistemas no ano de 2021.</p>
+                </article>
+                <article>
+                    <h3>Cursos de Aperfeiçoamento</h3>
+                        <p>Ética no desenvolvimento de sistemas.</p>
+                        <p>Criação de sites com HTML e CSS.</p>
+                </article>
+                <article>
+                    <h3>Estudo contínuo</h3>
+                        <p>Web Design, com conhecimentos em HTML5, CSS3, JavaScript, Tipografia, jQuery, Bootstrap.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-reading">Galeria</h2>
+            <p class="grid-description">Galeria criada para demonstrar possicionamento de imagens aleatórias através do Unsplash.</p>
+            <div class="grid">
+               <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?html=1" alt="random image from unsplash">
+               </div>
+               <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?css=2" alt="random image from unsplash">
+               </div>
+               <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?javascript=3" alt="random image from unsplash">
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h3>Contato</h3>
+            </div>
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                   
+                    <div class="form-group">
+                        <label for="first-name">Nome</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Seu email" aria-placeholder="your email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Menssagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua menssagem"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar menssagem</button>
+                    </div>
+                </fieldset>
+            </div>  
+            <div class="wrapper">
+                <div class="button">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span><a href="https://www.instagram.com/ruifreitas85/" target="_blank">Instagram</a></span>
+                </div>
+                <div class="button">
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <span><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a></span>
+                </div>
+                <div class="button">
+                <div class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <span><a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">Whatsapp</a></span>
+                </div>
+                <div class="button">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <span><a href="https://github.com/RuidembergFreitas" target="_blank">GitHub</a></span>
+                </div>
+                
+            </div> 
+        </div>
+    </section> 
+    
+
+    <footer id="footer" class="footer white-bg">
+        <p>Feito por <a target="_blank" href="https://github.com/RuidembergFreitas">
+            FRFDEV85</a></p>
+    </footer>
+    <a class="back-to-top" href="#">➺</a>
+</body>
+
+</html>
