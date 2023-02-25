@@ -162,12 +162,9 @@
     background: #b53bc5;
   }
   .wrapper .button:nth-child(2):hover .icon{
-    background: #2254be;
-  }
-  .wrapper .button:nth-child(3):hover .icon{
     background: #30e139;
   }
-  .wrapper .button:nth-child(4):hover .icon{
+  .wrapper .button:nth-child(3):hover .icon{
     background: #707070;
   }
   
@@ -190,13 +187,10 @@
   .wrapper .button:nth-child(1) span{
     color: #b53bc5;
   }
-  .wrapper .button:nth-child(2) span{
-    color: #2254be;
-  }
-  .wrapper .button:nth-child(3) span{
+   .wrapper .button:nth-child(2) span{
     color: #30e139;
   }
-.wrapper .button:nth-child(4) span{
+.wrapper .button:nth-child(3) span{
     color: #707070;
     margin-left: 10px;
   }
